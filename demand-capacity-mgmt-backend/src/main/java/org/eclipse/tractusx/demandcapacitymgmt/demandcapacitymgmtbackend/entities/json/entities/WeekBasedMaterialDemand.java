@@ -30,7 +30,7 @@ import lombok.Data;
 @Builder
 public class WeekBasedMaterialDemand {
 
-    private String unityOfMeasure;
+    private String unitOfMeasure;
     private String materialDescriptionCustomer;
     private String materialDemandId;
     private String materialNumberSupplier;

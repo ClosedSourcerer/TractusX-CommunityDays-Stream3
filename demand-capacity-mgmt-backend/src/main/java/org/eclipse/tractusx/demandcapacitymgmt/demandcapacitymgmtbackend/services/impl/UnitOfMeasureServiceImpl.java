@@ -32,13 +32,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.eclipse.tractusx.demandcapacitymgmt.demandcapacitymgmtbackend.entities.UnitMeasureEntity;
 import org.eclipse.tractusx.demandcapacitymgmt.demandcapacitymgmtbackend.exceptions.type.BadRequestException;
 import org.eclipse.tractusx.demandcapacitymgmt.demandcapacitymgmtbackend.repositories.UnitMeasureRepository;
-import org.eclipse.tractusx.demandcapacitymgmt.demandcapacitymgmtbackend.services.UnityOfMeasureService;
+import org.eclipse.tractusx.demandcapacitymgmt.demandcapacitymgmtbackend.services.UnitOfMeasureService;
 import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
 @Slf4j
-public class UnityOfMeasureServiceImpl implements UnityOfMeasureService {
+public class UnitOfMeasureServiceImpl implements UnitOfMeasureService {
 
     private final UnitMeasureRepository unitMeasureRepository;
 

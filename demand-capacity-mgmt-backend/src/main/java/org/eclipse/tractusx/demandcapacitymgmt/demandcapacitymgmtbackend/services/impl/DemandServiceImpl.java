@@ -56,7 +56,7 @@ public class DemandServiceImpl implements DemandService {
 
     private final CompanyService companyService;
     private final UserRepository userRepository;
-    private final UnityOfMeasureService unityOfMeasureService;
+    private final UnitOfMeasureService unitOfMeasureService;
 
     private final MaterialDemandRepository materialDemandRepository;
 
@@ -479,7 +479,7 @@ public class DemandServiceImpl implements DemandService {
             UUIDUtil.generateUUIDFromString(materialDemandRequest.getCustomerId())
         );
 
-        UnitMeasure unitMeasure = unityOfMeasureService.findById(
+        UnitMeasure unitMeasure = unitOfMeasureService.findById(
             UUID.fromString(materialDemandRequest.getUnitMeasureId())
         );
 
@@ -504,7 +504,7 @@ public class DemandServiceImpl implements DemandService {
             .materialNumberSupplier(materialDemandRequest.getMaterialNumberSupplier())
             .customerId(customerEntity)
             .supplierId(supplierEntity)
-            .unitMeasure(unityOfMeasureService.convertDtoToEntity(unitMeasure))
+            .unitMeasure(unitOfMeasureService.convertDtoToEntity(unitMeasure))
             .demandSeries(demandSeriesList)
             .changedAt(LocalDateTime.now())
             .build();

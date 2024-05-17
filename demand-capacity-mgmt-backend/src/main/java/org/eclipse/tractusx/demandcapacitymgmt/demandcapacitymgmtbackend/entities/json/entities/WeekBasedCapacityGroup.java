@@ -30,7 +30,7 @@ import lombok.Data;
 @Builder
 public class WeekBasedCapacityGroup {
 
-    private String unityOfMeasure;
+    private String unitOfMeasure;
     private String supplier;
     private String name;
     private List<String> supplierLocations;

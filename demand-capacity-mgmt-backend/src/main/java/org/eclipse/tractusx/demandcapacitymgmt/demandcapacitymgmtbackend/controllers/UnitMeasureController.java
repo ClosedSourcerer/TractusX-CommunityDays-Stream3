@@ -27,7 +27,7 @@ import eclipse.tractusx.demand_capacity_mgmt_specification.model.UnitMeasure;
 import java.util.List;
 import java.util.UUID;
 import lombok.AllArgsConstructor;
-import org.eclipse.tractusx.demandcapacitymgmt.demandcapacitymgmtbackend.services.UnityOfMeasureService;
+import org.eclipse.tractusx.demandcapacitymgmt.demandcapacitymgmtbackend.services.UnitOfMeasureService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,15 +36,15 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class UnitMeasureController implements UnitMeasureApi {
 
-    private final UnityOfMeasureService unityOfMeasureService;
+    private final UnitOfMeasureService unitOfMeasureService;
 
     @Override
     public ResponseEntity<List<UnitMeasure>> getUnitMeasure() throws Exception {
-        return ResponseEntity.status(HttpStatus.OK).body(unityOfMeasureService.getAllUnitMeasure());
+        return ResponseEntity.status(HttpStatus.OK).body(unitOfMeasureService.getAllUnitMeasure());
     }
 
     @Override
     public ResponseEntity<UnitMeasure> getUnitMeasureByID(String id) throws Exception {
-        return ResponseEntity.status(200).body(unityOfMeasureService.findById(UUID.fromString(id)));
+        return ResponseEntity.status(200).body(unitOfMeasureService.findById(UUID.fromString(id)));
     }
 }

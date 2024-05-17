@@ -1933,7 +1933,7 @@ components:
     WeekBasedCapacityGroupRequest:
       type: object
       properties:
-        unityOfMeasure:
+        unitOfMeasure:
           type: string
         linkedDemandSeries:
           type: array
@@ -1961,7 +1961,7 @@ components:
     WeekBasedMaterialDemandRequest:
       type: object
       properties:
-        unityOfMeasure:
+        unitOfMeasure:
           type: string
         materialDescriptionCustomer:
           type: string
@@ -1985,7 +1985,7 @@ components:
     WeekBasedMaterialDemandResponse:
       type: object
       properties:
-        unityOfMeasure:
+        unitOfMeasure:
           type: string
         materialDescriptionCustomer:
           type: string
