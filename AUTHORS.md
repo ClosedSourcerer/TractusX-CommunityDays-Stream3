@@ -6,5 +6,6 @@ The following people have contributed to this repository:
 * Sérgio Figueiredo, CGI, [Ruskyy](https://github.com/Ruskyy)
 * Vinicius Vieira, CGI, [viniciusvieirah](https://github.com/viniciusvieirah)
 * Philipp Mai, BMW, [ClosedSourcerer](https://github.com/ClosedSourcerer)
+* Chirag Yadav, Datafabriq, [Shutstart](https://github.com/shutstart)
 
 Please add yourself to this list, if you contribute to the content.
