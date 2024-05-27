@@ -114,7 +114,6 @@
             <scope>test</scope>
         </dependency>
 
-
 		<!-- https://mvnrepository.c	om/artifact/io.netty/netty-resolver-dns-native-macos -->
 		<dependency>
 			<groupId>io.netty</groupId>
